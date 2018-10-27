@@ -1,0 +1,62 @@
+body {
+    background-color: #009688;
+    font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+}
+#title{
+  text-align: center;
+  color: #FFFFFF;
+}
+#white-box{
+  background-color: #ffffff;
+  margin: 0 20%;
+  padding: 10px;
+}
+#description {
+  text-align: center;
+}
+/* .formInput {
+    text-align:center;
+     padding: 5px;
+}
+ */
+
+.formRow {
+  padding: 5px;
+}
+
+.formLabel {
+  width: 40%;
+  display: inline-block;
+  text-align: right;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  vertical-align: top;
+}
+
+.formInput {
+  width: 60%;
+  display: inline;
+  padding: 0 10px;
+  margin: 10px;
+}
+
+.formInput input,
+.formInput select,
+.formInput ul,
+.formInput li,
+{
+  width: 35%;
+}
+
+ul {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+#submit {
+  background-color: #009688;
+  color: #ffffff;
+}

@@ -1,0 +1,112 @@
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <main id="main">
+        <h1 id="title">Survey Form</h1>
+        <div id="white-box">
+            <div>
+                <p id="description">Help us improve by giving us feedback</p>
+            </div>
+            <form id="survey-form">
+                <div id="nameRow" class="formRow">
+                    <div id="nameLabel" class="formLabel">
+                        <label id="name-label" for="name">Name:</label>
+                    </div>
+                    <div id="nameInput" class="formInput">
+                        <input id="name" name="name" type="text" placeholder="Enter your full name" required>
+                    </div>
+                </div>
+                <div id="emailRow" class="formRow">
+                    <div id="emailLabel" class="formLabel">
+                        <label id="email-label" for="email">Email:</label>
+                    </div>
+                    <div id="emailInput" class="formInput">
+                        <input id="email" name="email" type="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div id="ageRow" class="formRow">
+                    <div id="ageLabel" class="formLabel">
+                        <label id="number-label" for="age">Age:</label>
+                    </div>
+                    <div id="ageInput" class="formInput">
+                        <input id="number" type="number" name="age" min="1" max="150" placeholder="Age" required>
+                    </div>
+                </div>
+
+                <div id="optionRow" class="formRow">
+                    <div id="optionLabel" class="formLabel">
+                        <label id="option-label" for="option">Which option best describes your current role?</label>
+                    </div>
+                    <div id="optionInput" class="formInput">
+                        <select id="dropdown" name="role">
+                            <option value="student">Student</option>
+                            <option value="job">Full Time Job</option>
+                            <option value="learner">Full Time Learner</option>
+                            <option value="preferNo">Prefer not to say</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="recRow" class="formRow">
+                    <div id="recLabel" class="formLabel">
+                        <label id="rec-label" for="rec">How likely is that you would recommend freeCodeCamp to a
+                            friend?</label>
+                    </div>
+                    <div id="recInput" class="formInput">
+                        <ul id="recommendList">
+                            <li><input name="recommended" id="def" type="radio" value="2"> <label for="def">Definitely</label></li>
+                            <li><input name="recommended" id="maybe" type="radio" value="1"> <label for="maybe">Maybe</label></li>
+                            <li><input name="recommended" id="ns" type="radio" value="0"> <label for="ns">Not sure</label></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="imprRow" class="formRow">
+                    <div id="imprLabel" class="formLabel">
+                        <label id="impr-label" for="impr">Things that should be improved in the future<br>
+                            (Check all that apply):</label>
+                    </div>
+                    <div id="imprInput" class="formInput">
+                        <ul id="improvementList">
+                            <li><input type="checkbox" name="improvement" id="imp01" value="01"> <label for="imp01">Front-end
+                                    Projects</label></li>
+                            <li><input type="checkbox" name="improvement" id="imp02" value="02"> <label for="imp02">Back-end
+                                    Projects</label></li>
+                            <li><input type="checkbox" name="improvement" id="imp03" value="03"> <label for="imp03">Data
+                                    Visualization</label></li>
+                            <li><input type="checkbox" name="improvement" id="imp04" value="04"> <label for="imp04">Challenges</label></li>
+                            <li><input type="checkbox" name="improvement" id="imp05" value="05"> <label for="imp05">Open
+                                    Source Community</label></li>
+                            <li><input type="checkbox" name="improvement" id="imp06" value="06"> <label for="imp06">Gitter
+                                    help rooms</label></li>
+                            <li><input type="checkbox" name="improvement" id="imp07" value="07"> <label for="imp07">Videos</label></li>
+                            <li><input type="checkbox" name="improvement" id="imp08" value="08"> <label for="imp08">City
+                                    Meetups</label></li>
+                            <li><input type="checkbox" name="improvement" id="imp09" value="09"> <label for="imp09">Wiki</label></li>
+                            <li><input type="checkbox" name="improvement" id="imp10" value="10"> <label for="imp10">Forum</label></li>
+                            <li><input type="checkbox" name="improvement" id="imp11" value="11"> <label for="imp11">Additional
+                                    Courses</label></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="commRow" class="formRow">
+                    <div id="commLabel" class="formLabel">
+                        <label id="comm-label" for="comm">Any Comments or Suggestions?</label>
+                    </div>
+                    <div id="commInput" class="formInput">
+                        <textarea name="comments" id="commentsInput" cols="40" rows="5" placeholder="Enter your comment here..."></textarea>
+                    </div>
+                </div>
+
+
+                <center><input type="submit" id="submit" class="btn btn-default" value="Submit"></center>
+
+
+            </form>
+        </div>
+    </main>
+</body>
